@@ -1,0 +1,282 @@
+.App {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.song-div{
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.295);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selected-song-div{
+  color: white;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.587);
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0085b2;
+}
+
+.left-song-itms{
+  display:flex;
+  flex-direction: row;
+  padding-left: 10px;
+  align-items: center;
+}
+
+.arrow-container-left{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #DDDDDD;
+  color: #DDDDDD;
+  border-radius: 7px;
+  height: 40px;
+  width: 40px;
+  margin-top: 30vh;
+  margin-right: 40vw;
+}
+
+.arrow-container-right{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  color: #DDDDDD;
+  border: 1px solid #DDDDDD;
+  height: 40px;
+  width: 40px;
+  top: 30%;
+  left: 50%;
+  margin-top: 30vh;
+  margin-left: 40vw;
+}
+
+.arrow-container-left:hover{
+  background-color: #0085b2;
+  color: white;
+  cursor: pointer;
+}
+
+.arrow-container-left:active{
+  background-color: #00698c;
+  transform: translateY(2px)
+}
+
+.arrow-container-right:hover{
+  background-color: #0085b2;
+  color: white;
+  cursor: pointer;
+}
+
+.arrow-container-right:active{
+  background-color: #00698c;
+  transform: translateY(2px)
+}
+
+.music-list-div{
+  background-color: rgb(243, 243, 243);
+  box-shadow: 2px 2px 5px #333;
+  width: 50vw;
+  height: 35vh;
+  margin: 0 auto;
+  margin-top: 60px;
+  overflow: auto;
+  transition: 500ms;
+}
+
+.collapse-style{
+  height: 20px;
+  border-radius: 20px;
+  transition: 500ms;
+}
+
+.song-duration-div{
+  color: "black";
+  padding-right: 20px;
+}
+
+.song-id{
+  padding: 3px 8px;
+  background-color: #90b9c9;
+  color: white;
+}
+
+.song-name{
+  margin-left: 10px;
+  color: #0085b2;
+}
+
+.selected-song-name{
+  margin-left: 10px;
+  color:white;
+}
+
+.label{
+  padding: 5px;
+  font-size: 12px;
+  background-color: #DDDDDD;
+  margin-left: 10px;
+  color: black;
+}
+
+.selected-label{
+  padding: 5px;
+  font-size: 12px;
+  background-color: #90b9c9;;
+  margin-left: 10px;
+  color: white;
+}
+
+.carousel-div{
+  display: flex;
+  position:relative;
+  justify-content: center;
+  height: 55vh;
+}
+
+.album-div{
+  position: absolute;
+  height: 80%;
+  width: 18%;
+  margin-top:90px;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 3px 3px 6px grey;
+  transition: 500ms;
+}
+
+.album1{
+  transform: translateX(-320px) translateY(-80px);
+  transition: 500ms;
+  z-index: 80;
+}
+.album2{
+  transform: translateX(-160px) translateY(-40px);
+  transition: 500ms;
+  z-index: 90;
+}
+.album3{
+  z-index: 100;
+  background-color: #0085B2;
+  color:white;
+  transition: 500ms;
+}
+
+.album3 .album-name{
+  color:white;
+  font-size: 20;
+  margin-top: 0;
+}
+
+.album4{
+  transform: translateX(160px) translateY(-40px);
+  z-index: 90;
+  transition: 500ms;
+}
+.album5{
+  transform: translateX(320px) translateY(-80px);
+  z-index: 80;
+  transition: 500ms;
+}
+
+.album-name{
+  font-size: 20px;
+  color: #0085B2;
+  margin-top:0px;
+}
+
+.image-div{
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.left-button{
+  padding:20px;
+  background-color: aquamarine;
+}
+.right-button{
+  padding:20px;
+  background-color: aquamarine;
+}
+
+.star-container{
+  padding:5px;
+  margin-left:5px;
+}
+
+.star-color{
+  color: #DDDDDD;
+}
+
+
+.selected-star{
+  color:#D9D900;
+}
+
+.song-div:hover{
+  background-color: #0085b2;
+  cursor: pointer;
+}
+
+.song-div:hover .star-color{
+  color:white;
+}
+
+
+.song-div:hover .song-duration-div{
+  color:white;
+}
+
+.song-div:hover .song-name{
+  color:white;
+}
+
+.song-div:hover .label{
+  color:white;
+  background-color: #90b9c9;
+}
+
